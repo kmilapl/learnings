@@ -1,63 +1,60 @@
 <!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>PETLOVZ</title>
 </head>
 
 <body>
-    <div id="centro">
-        <form class="frm" method='post'>
-            <div class="titulo">
-                CADASTRO<br><hr>
-            </div>
-                <div class="formdiv">
-                        <img src="imagens/camera.png" alt="Selecione uma imagem" id="fotinho">
-                        <input type="file" id="flImage" name="flImage" accept="image/*">
-                        <script src="script.js"></script>
-                            <br><br> 
-                        <div class="formdiv-area">
-                        <label class='lblfrm'>Nome PET</label><br>
-                        <input type='text' name='nomepet' size='30' maxlength='20' placeholder="COMO SE CHAMA O SEU PET?" required>
-                        </div>
-                        <div class="formdiv-area">                    
-                        <label class='lblfrm'>Raça do PET</label><br>
-                        <input type='radio' name='raca' value='SRD'>
-                        <label class='lblpl'>SRD</label>
-                        <input type='radio' name='raca' value='OUTRO'>
-                        <label class='lblpl'>OUTRO </label><input type='text' name='raca' size='17' maxlength='20' placeholder="DIGITE A RAÇA DO SEU PET" required>
-                        </div>
-                        <div class="formdiv-area">    
-                        <label class='lblfrm'>Sexo do PET</label><br>
-                        <input type='radio' name='sexo' value='MACHO'>
-                        <label class='lblpl'>Macho</label>
-                        <input type='radio' name='sexo' value='FEMEA'>
-                        <label class='lblpl'>Fêmea</label>
-                        </div>
+    <main class="centro">
+        
+        <div class="titu">
+            CADASTRO
+        </div>
+        <img src="imagens/camera.png" alt="Selecione uma imagem" id="fotinho">
+            <input type="file" id="flImage" name="flImage" accept="image/*">
+            <script src="script.js"></script>
 
-                        <label class='lblfrm'>Data de Nascimento do PET</label>
-                        <br>
-                        <input type='date' name='dtnasc'>
-
-                    <div class="formdiv-area">
-                        <label class="lblfrm">Nome Completo do Dono</label>
-                        <input type='text' name='nomedono' size="50%" maxlength='40' placeholder="RESPONSÁVEL PELO PET" required>
-                    </div>
-                    <div class="formdiv-area">
-                        <label class="lblfrm">E-mail</label><br>
-                        <input type="email" name="email" size="40%" maxlength="50" placeholder="INSIRA SEU E-MAIL" required>
-                    </div>
-                    <div class="formdiv-area">
-                        <label class="lblfrm">Senha</label><br>
-                        <input type="password" name="password" size="30%" maxlength="40" placeholder="INSIRA SUA SENHA" required>
-                    </div>
+        <form class="formu" method="post">
+            <label class='lblfrm'>Nome do PET</label>
+                <input type='text' name='nomepet' maxlength='20' placeholder="COMO SE CHAMA O SEU PET?" required>
+        
+                <div class="formuint">
+                <label class='lblfrm'>Raça do PET</label><br>
+                <input type='radio' name='raca' value='SRD'><label class='lblpl'>SRD</label>
+                <input type='radio' name='raca' value='OUTRO'><label class='lblpl'>OUTRO </label><input type='text' name='raca' maxlength='20' placeholder="DIGITE A RAÇA DO SEU PET" required>
                 </div>
-                <br>
+        
+                <div class="formuint">    
+                    <label class='lblfrm'>Sexo do PET</label><br>
+                    <input type='radio' name='sexo' value='MACHO'>
+                    <label class='lblpl'>Macho</label>
+                    <input type='radio' name='sexo' value='FEMEA'>
+                    <label class='lblpl'>Fêmea</label>
+                </div>
+
+                <label class='lblfrm'>Data de Nascimento do PET</label>
+                <input type='date' name='dtnasc'>
+
+                <label class="lblfrm">Nome Completo do Dono</label>
+                <input type='text' name='nomedono' maxlength='40' placeholder="RESPONSÁVEL PELO PET" required>
+                    
+                <label class="lblfrm">Email</label><br>
+                <input type="email" name="email" maxlength="50" placeholder="INSIRA SEU E-MAIL" required>
+                    
+                <label class="lblfrm">Senha</label><br>
+                <input type="password" name="password" maxlength="40" placeholder="INSIRA SUA SENHA" required>
+                    
+
                 <div class="botoes">
                     <input type='submit' value="Criar Conta">
                     <input type='reset' value="Limpar">
                 </div>
-            </form>
-        </div>
-    </body>
+
+        </form>
+
+    </main>
+</body>
 </html>

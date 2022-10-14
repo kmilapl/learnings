@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-@author: prof. Gregorio 
-Disciplina: Estrutura de Dados
-"""
-"""
 Integrantes do Grupo:
     RA: 221176 - Camila Pereira de Lira 
     RA: 223993 - Guilherme Viana 

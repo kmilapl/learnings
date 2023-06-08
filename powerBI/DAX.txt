@@ -1,0 +1,14 @@
+DAX - Data Analytics Expressions:
+
+Sintaxe utilizada pelo DAX inicia:
+OPERADOR [primeira coluna referenciada] OPERADOR [segunda coluna referenciada]
+
+Possuem 4 tipos de operadores de cálculo:
+
+Aritmetico >>> soma(+), subtração(-), multiplicação(*), divisão(/), potência(^)
+
+Comparação >>> igual a(=), estrito igual a(==), maior que(>), menor que(<), maior ou igual a (>=), menor ou igual (<=), diferente de(<>)
+
+Texto >>> concatena dois valores de texto (&)
+
+Lógicos >>> and(&&), or(||), or em cada linha (IN)

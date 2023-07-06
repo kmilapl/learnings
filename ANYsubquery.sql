@@ -1,0 +1,9 @@
+SELECT *
+FROM customer
+WHERE customer_id = ANY (
+	SELECT customer_id
+	FROM payment
+	GROUP BY customer_id
+	HAVING COUNT(*) > 35)
+    
+    
